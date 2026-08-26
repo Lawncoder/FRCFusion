@@ -1,10 +1,11 @@
 = FRC Fusion
 
 
+:toc:
 :toclevels: 3
 
 
-= FRC Tools for Fusion (From 4698 Raider Robotics)
+== FRC Tools for Fusion (From 4698 Raider Robotics)
 :experimental:
 :imagesdir: docs
 :figure-caption!:
