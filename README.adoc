@@ -2,24 +2,19 @@
 
 :toc:
 
-== FRC Tools for Fusion (From 4698 Raider Robotics)
+== FRC Tools for Fusion
 :experimental:
 :imagesdir: docs
 :figure-caption!:
 
-
+(Credit goes to 4698 Raider Robotics for the tools in this section except for Shaft Generator)
 
 These are some tools to speed up some CAD operations that occur frequently in FRC robot design.  This work was inspired by the great tools the community has made available for OnShape.
 
 Also consider using https://github.com/hammerheads5000/FRC-COTS[Team 5000s FRC-COTS] to manage COTS files.
 
-*NEW in Version 1.4.0:*
-
-* Shaft end operations (<<shaft-endings>>)
-* Generator files included for chain sprockets and timing belt pulleys (generators subfolder)
-
 === Installation
-Download the https://github.com/4698RaiderRobotics/FRCTools/releases[latest release^] from GitHub.  For Windows there is an installer that will put the Add-In in the $USER\AppData\Roaming\Autodesk\Autodesk Fusion 360\API\AddIns\FRCTools directory by default.  This is where Fusion automatically looks for Add-ins.  Using the installer also allows for uninstallation with the "Add/Remove Programs" functionality.  There is also a zip archive that can be used on MacOS (I think).  I haven't tried MacOS to see if these tools even work on that platform.
+Download the https://github.com/4698RaiderRobotics/FRCTools/releases[latest release^] from GitHub and place in an appopriate folder
 
 After installation close Fusion if it was open and reopen it.  The FRCTools Add-In should be enabled by default.  For more information on installing Add-Ins see https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/How-to-install-an-ADD-IN-and-Script-in-Fusion-360.html[How to install Add-Ins^].  For more information on disabling Add-Ins see https://help.autodesk.com/view/fusion360/ENU/?guid=SLD-MANAGE-SCRIPTS-ADD-INS[Managing Scripts and Add-Ins^].
 
@@ -103,6 +98,8 @@ image::ShaftGen.png[]
 
 == Marker CAD
 TIP: kbd:[Insert Tab] menu:Insert[Marker CAD]
+
+image::Example.png[]
 
 === Features
 
