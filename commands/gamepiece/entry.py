@@ -95,8 +95,8 @@ def command_created(args: adsk.core.CommandCreatedEventArgs):
         ddc.listItems.add('Cube', True)
         ddc.listItems.add('Cylinder', False)
         inputs.addValueInput('length', "Length", defaultLengthUnits, adsk.core.ValueInput.createByReal(2.54*2 ))
-        inputs.addValueInput('width', "Width", defaultLengthUnits, adsk.core.ValueInput.createByReal(2.54*2 ))
-        inputs.addValueInput('height', "Height", defaultLengthUnits, adsk.core.ValueInput.createByReal(2.54 * 2))
+        inputs.addValueInput('width', "Width/Diameter", defaultLengthUnits, adsk.core.ValueInput.createByReal(2.54*2 ))
+        inputs.addValueInput('height', "Height (Only if cube)", defaultLengthUnits, adsk.core.ValueInput.createByReal(2.54 * 2))
      
     except Exception as ex:
         ui.messageBox(str(ex))
@@ -145,11 +145,11 @@ def command_execute(args: adsk.core.CommandEventArgs):
     comp = occ.component
     # Now use the values, e.g. branch on type
     if selected_type == 'Ball':
-       create_sphere(comp, futil.pZero, length)
+       create_sphere(comp, futil.pZero, width/2)
     elif selected_type == 'Cube':
         futil.create_tube(width, length, height, comp.xYConstructionPlane, occ)
     elif selected_type == 'Cylinder':
-        create_cylinder(comp, futil.pZero, adsk.core.Vector3D.create(0, 1, 0), height, length)
+        create_cylinder(comp, futil.pZero, adsk.core.Vector3D.create(0, 1, 0), length, width/2)
     futil.get_random_flat_color(occ, design, app)
     comp.name = f"Generic Gamepiece"
     endIndex = design.timeline.count - 1

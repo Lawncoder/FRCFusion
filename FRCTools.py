@@ -19,13 +19,20 @@ def run(context):
         sketch_create_panel = workspace.toolbarPanels.itemById( config.SKETCH_CREATE_ID )
         sketch_modify_panel = workspace.toolbarPanels.itemById( config.SKETCH_MODIFY_ID )
 
-        # Create the the FRCTool submenu in the solid-create, sketch-create, and sketch-modify panels.
-        solid_panel.controls.addDropDown( "FRCTools", "", config.FRC_TOOLS_DROPDOWN_ID )
-        sketch_create_panel.controls.addDropDown( "FRCTools", "", config.FRC_TOOLS_DROPDOWN_ID )
-        sketch_modify_panel.controls.addDropDown( "FRCTools", "", config.FRC_TOOLS_DROPDOWN_ID )
+     
+        insert_panel = workspace.toolbarPanels.itemById(config.INSERT_ID)
+        def add_dropdown_safe(panel, name, dropdown_id):
+            existing = panel.controls.itemById(dropdown_id)
+            if existing:
+                existing.deleteMe()
+            return panel.controls.addDropDown(name, "", dropdown_id)
+
+        add_dropdown_safe(solid_panel, "FRCTools", config.FRC_TOOLS_DROPDOWN_ID)
+        add_dropdown_safe(sketch_create_panel, "FRCTools", config.FRC_TOOLS_DROPDOWN_ID)
+        add_dropdown_safe(sketch_modify_panel, "FRCTools", config.FRC_TOOLS_DROPDOWN_ID)
 
         insert_panel = workspace.toolbarPanels.itemById(config.INSERT_ID)
-        insert_panel.controls.addDropDown("Marker CAD", "", config.MARKER_CAD_ID)
+        add_dropdown_safe(insert_panel, "Marker CAD", config.MARKER_CAD_ID)
 
         # This will run the start function in each of your commands as defined in commands/__init__.py
         commands.start()
