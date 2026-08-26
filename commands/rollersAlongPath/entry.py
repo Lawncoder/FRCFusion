@@ -145,7 +145,7 @@ def command_execute(args: adsk.core.CommandEventArgs):
         rollerCount = inputs.itemById('roller_count').valueOne
 
         workingOcc = root.occurrences.addNewComponent(adsk.core.Matrix3D.create())
-        workingOcc.activate()
+     
         plane = workingOcc.component.constructionPlanes.createInput()
     
         sketch = workingOcc.component.sketches.add(curve.parentSketch.referencePlane)

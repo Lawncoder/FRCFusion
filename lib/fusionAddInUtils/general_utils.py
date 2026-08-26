@@ -267,7 +267,7 @@ def are_faces_coplanar(face1: adsk.fusion.BRepFace, face2: adsk.fusion.BRepFace)
 def create_tube(width : float, length : float, height : float, startPlane : adsk.core.Base, occurence : adsk.fusion.Occurrence, cylindrical : bool = False, extensionDir : adsk.fusion.ExtentDirections = adsk.fusion.ExtentDirections.PositiveExtentDirection, startPoint : adsk.core.Point3D = pZero, extrudeOperation = adsk.fusion.FeatureOperations.NewComponentFeatureOperation):
     try:
         comp = occurence.component
-        occurence.activate()
+     
         sketch = comp.sketches.add(startPlane, occurence)
         if cylindrical:
             sketch.sketchCurves.sketchEllipses.add(startPoint, pointFromOffset(startPoint, width/2.54, 0), pointFromOffset(startPoint, 0, height/2.54))

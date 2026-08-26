@@ -155,7 +155,7 @@ def command_execute(args: adsk.core.CommandEventArgs):
         occ = root.occurrences.addNewComponent(adsk.core.Matrix3D.create())
         comp = occ.component
 
-        occ.activate()
+  
 
         futil.create_tube(width, length, height, comp.xZConstructionPlane, occ, cylindrical=(structure_type == "Cylindrical"))
         futil.create_tube(spr_diam/2, spr_width/2, spr_diam/2, comp.xYConstructionPlane, occ, cylindrical=True, extensionDir=adsk.fusion.ExtentDirections.SymmetricExtentDirection, extrudeOperation=adsk.fusion.FeatureOperations.JoinFeatureOperation)

@@ -95,8 +95,8 @@ def command_created(args: adsk.core.CommandCreatedEventArgs):
         ddc.listItems.add('Cube', True)
         ddc.listItems.add('Cylinder', False)
         inputs.addValueInput('length', "Length", defaultLengthUnits, adsk.core.ValueInput.createByReal(2.54*2 ))
-        inputs.addValueInput('width', "Width/Diameter", defaultLengthUnits, adsk.core.ValueInput.createByReal(2.54*2 ))
-        inputs.addValueInput('height', "Height (Only if cube)", defaultLengthUnits, adsk.core.ValueInput.createByReal(2.54 * 2))
+        inputs.addValueInput('width', "Width or Diameter", defaultLengthUnits, adsk.core.ValueInput.createByReal(2.54*2 ))
+        inputs.addValueInput('height', "Height", defaultLengthUnits, adsk.core.ValueInput.createByReal(2.54 * 2))
      
     except Exception as ex:
         ui.messageBox(str(ex))
