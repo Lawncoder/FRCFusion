@@ -31,7 +31,7 @@ These are some tools to speed up some CAD operations that occur frequently in FR
 Also consider using https://github.com/hammerheads5000/FRC-COTS[Team 5000s FRC-COTS] to manage COTS files.
 
 === Installation
-Download the https://github.com/4698RaiderRobotics/FRCTools/releases[latest release^] from GitHub and place in an appopriate folder
+Click the green code buttom dropdown and click download zip
 
 After installation close Fusion if it was open and reopen it.  The FRCTools Add-In should be enabled by default.  For more information on installing Add-Ins see https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/How-to-install-an-ADD-IN-and-Script-in-Fusion-360.html[How to install Add-Ins^].  For more information on disabling Add-Ins see https://help.autodesk.com/view/fusion360/ENU/?guid=SLD-MANAGE-SCRIPTS-ADD-INS[Managing Scripts and Add-Ins^].
 
