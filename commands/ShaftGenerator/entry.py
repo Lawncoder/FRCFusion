@@ -172,7 +172,7 @@ def command_execute(args: adsk.core.CommandEventArgs):
                     
                 
             except Exception as ex:
-                ui.messageBox(ex)
+                ui.messageBox(str(ex))
          case ShaftType.HALF_HEX:
             sketch.sketchCurves.sketchLines.addScribedPolygon(adsk.core.Point3D.create(0,0,0), 6 , 0, 0.635, False)
          case ShaftType.THREE_EIGHTS_HEX:
