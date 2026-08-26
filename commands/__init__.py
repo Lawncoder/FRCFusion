@@ -48,21 +48,21 @@ commands = [
     TimingPulley,
     Tubify,
     ShaftGenerator,
-    elevator,
-    rollers,
-    conveyor,
-    rollersAlongPath,
     arm,
-    drivetrain,
-    telescope,
-    fixed_shooter,
-    variable_shooter,
-    spindex,
-    turret,
     belt,
-    structure,
+    conveyor,
+    drivetrain,
+    elevator,
+    fixed_shooter,
     frame,
-    gamepiece
+    gamepiece,
+    rollers,
+    rollersAlongPath,
+    spindex,
+    structure,
+    telescope,
+    turret,
+    variable_shooter
 ]
 
 ui_handlers = []
