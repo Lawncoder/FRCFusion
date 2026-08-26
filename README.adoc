@@ -1,7 +1,15 @@
+= FRC Fusion
+
+:toc: macro
+:toclevels: 3
+toc::[]
+
+[#FRCTools]
 = FRC Tools for Fusion (From 4698 Raider Robotics)
 :experimental:
 :imagesdir: docs
 :figure-caption!:
+
 
 
 These are some tools to speed up some CAD operations that occur frequently in FRC robot design.  This work was inspired by the great tools the community has made available for OnShape.
@@ -94,3 +102,6 @@ TIP: kbd:[Solid Tab] menu:Create[FRCTools > Generate Shaft]
 Generate a shaft from a few common profiles (MAXSpline, 1/2 hex, 3/8 hex and 3/4 OD Round Tube
 
 image::ShaftGen.png[]
+
+[#MarkerCAD]
+= Marker CAD
