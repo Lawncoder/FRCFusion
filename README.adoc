@@ -1,6 +1,23 @@
 = FRC Fusion
 
-:toc:
+== Table of Contents
+
+* <<frc-tools-for-fusion,FRC Tools for Fusion>>
+* <<installation,Installation>>
+* <<sketch-tab-tools,Sketch Tab Tools>>
+** <<create-cc-distance,Create C-C Distance Tool>>
+** <<edit-cc-distance,Edit C-C Distance Tool>>
+** <<bolt-pattern,Bolt Pattern Tool>>
+* <<solid-tab-tools,Solid Tab Tools>>
+** <<shaft-endings,Shaft Endings Tool>>
+** <<timing-belt,Timing Belt Tool>>
+* <<timing-pulley,Timing Pulley Tool>>
+* <<tubify,Tubify Tool>>
+* <<lighten,Lighten Tool>>
+* <<shaft-generator,Shaft Generator Tool>>
+* <<marker-cad,Marker CAD>>
+** <<features,Features>>
+
 
 == FRC Tools for Fusion
 :experimental:
