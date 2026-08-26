@@ -1,4 +1,4 @@
-= FRC Tools for Fusion
+= FRC Tools for Fusion (From 4698 Raider Robotics)
 :experimental:
 :imagesdir: docs
 :figure-caption!:
@@ -87,3 +87,5 @@ TIP: kbd:[Solid Tab] menu:Create[FRCTools > Lighten]
 This tool pockets a solid by offsetting profiles and cut extruding them through the solid.  A sketch should be created on the body to be lightened with spider-web lines where material should be kept.  Holding the Ctrl-key while selecting profiles delays the updating of the lighten tool graphics until Ctrl is released. 
 
 image::LightenDialog.png[]
+
+== Shaft Generator Tool
