@@ -89,3 +89,8 @@ This tool pockets a solid by offsetting profiles and cut extruding them through 
 image::LightenDialog.png[]
 
 == Shaft Generator Tool
+TIP: kbd:[Solid Tab] menu:Create[FRCTools > Generate Shaft]
+
+Generate a shaft from a few common profiles (MAXSpline, 1/2 hex, 3/8 hex and 3/4 OD Round Tube
+
+image::ShaftGen.png[]
