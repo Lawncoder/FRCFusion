@@ -1,10 +1,9 @@
 = FRC Fusion
 
-:toc: macro
-:toclevels: 3
-toc::[]
 
-[#FRCTools]
+:toclevels: 3
+
+
 = FRC Tools for Fusion (From 4698 Raider Robotics)
 :experimental:
 :imagesdir: docs
@@ -21,27 +20,27 @@ Also consider using https://github.com/hammerheads5000/FRC-COTS[Team 5000s FRC-C
 * Shaft end operations (<<shaft-endings>>)
 * Generator files included for chain sprockets and timing belt pulleys (generators subfolder)
 
-== Installation
+=== Installation
 Download the https://github.com/4698RaiderRobotics/FRCTools/releases[latest release^] from GitHub.  For Windows there is an installer that will put the Add-In in the $USER\AppData\Roaming\Autodesk\Autodesk Fusion 360\API\AddIns\FRCTools directory by default.  This is where Fusion automatically looks for Add-ins.  Using the installer also allows for uninstallation with the "Add/Remove Programs" functionality.  There is also a zip archive that can be used on MacOS (I think).  I haven't tried MacOS to see if these tools even work on that platform.
 
 After installation close Fusion if it was open and reopen it.  The FRCTools Add-In should be enabled by default.  For more information on installing Add-Ins see https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/How-to-install-an-ADD-IN-and-Script-in-Fusion-360.html[How to install Add-Ins^].  For more information on disabling Add-Ins see https://help.autodesk.com/view/fusion360/ENU/?guid=SLD-MANAGE-SCRIPTS-ADD-INS[Managing Scripts and Add-Ins^].
 
-== Sketch Tab Tools
-=== Create C-C Distance Tool image:icons/CCDistance.png['C-C Distance', 30]
+=== Sketch Tab Tools
+==== Create C-C Distance Tool image:icons/CCDistance.png['C-C Distance', 30]
 TIP: kbd:[Sketch Tab] menu:Create[FRCTools > C-C Distance]
 
 This tool creates a Center-to-Center Distance object.  It determines the correct spacing for 20DP Gears, HTD 5mm Belts, GT2 3mm Belts, RT25 Belts, #25H chain and #35 chain.  It also creates a set of linked sketch entities that represent the C-C Distance, pitch diameter circles, OD circles and a text label that effectively documents the parameters used to find the spacing in the sketch.  Deleting any part of the C-C Distance will delete all of it.
 
 image::CCDistanceCreate.png[]
 
-=== Edit C-C Distance Tool image:icons/CCDistance.png['C-C Distance', 30]
+==== Edit C-C Distance Tool image:icons/CCDistance.png['C-C Distance', 30]
 TIP: kbd:[Sketch Tab] menu:Modify[FRCTools > Edit C-C Distance]
 
 This tool allows for the editing of an existing C-C Distance object. The C-C Distance can be edited by right clicking on it and selecting `Edit C-C Distance` from the popup menu or by selecting an existing C-C Distance within the C-C Distance command. The linked entities can be edited as a unit.  Deleting any part of the C-C Distance will delete all of it.  A C-C Distance can be edited by right clicking on it and selecting `Edit C-C Distance` or by selecting an existing C-C Distance within the Edit C-C Distance command.
 
 image::CCDistanceEdit.png[]
 
-=== Bolt Pattern Tool image:icons/BoltPattern.png['Bolt Pattern', 30]
+==== Bolt Pattern Tool image:icons/BoltPattern.png['Bolt Pattern', 30]
 TIP: kbd:[Sketch Tab] menu:Create[FRCTools > Bolt Pattern]
 
 This tool creates a simple bolt pattern about a specified center point for some common FRC motors.  After it is created it can be edited to add/remove suppression, change the center diameter etc.
@@ -49,10 +48,10 @@ This tool creates a simple bolt pattern about a specified center point for some 
 image::BoltPatternCreate.png[]
 
 
-== Solid Tab Tools
+=== Solid Tab Tools
 
 [#shaft-endings]
-=== Shaft Endings Tool image:icons/ShaftEndings.png['ShaftEndings', 30]
+==== Shaft Endings Tool image:icons/ShaftEndings.png['ShaftEndings', 30]
 TIP: kbd:[Solid Tab] menu:Create[FRCTools > Shaft Endings]
 
 This tool generates Shaft end operations on 1/2", 3/8" and 1/4" shafts.  It can put an e-clip or snap ring groove on the end of the shaft. It can also put a center hole in the shaft.
@@ -60,7 +59,7 @@ This tool generates Shaft end operations on 1/2", 3/8" and 1/4" shafts.  It can 
 .Shaft Endings Tool
 image::ShaftEndingExample.png[]
 
-=== Timing Belt Tool image:icons/TimingBelt.png['Timing Belt', 30]
+==== Timing Belt Tool image:icons/TimingBelt.png['Timing Belt', 30]
 TIP: kbd:[Solid Tab] menu:Create[FRCTools > Extrude Belt/Chain]
 
 This tool generates Timing Belt or chain solids from a C-C Distance input.  A simpliflied preview is used to speed up the UI response time.  For chains and timing belts without teeth the body if referenced to the C-C Distance entity and will update position and size with it.  It will not update correctly if the belt or chain type is changed.  For toothed belts, the solid body is not referenced to the C-C sketch geometry as this made the UI laggy and unresponsive. A C-C Distance can be extruded by right clicking on it and selecting `Extrude Belt/Chain` or by selecting an existing C-C Distance within the C-C Distance command
@@ -71,7 +70,7 @@ image::TimingBeltPreview.png[]
 .Complete Timing Belt
 image::TimingBeltDone.png[]
 
-== Timing Pulley Tool image:icons/TimingPulley.png['Timing Pulley', 30]
+=== Timing Pulley Tool image:icons/TimingPulley.png['Timing Pulley', 30]
 TIP: kbd:[Solid Tab] menu:Create[FRCTools > Timing Pulley]
 
 NOTE: DEPRECIATED!  Use the generator design files instead.  They are more flexible.
@@ -81,7 +80,7 @@ This tool creates very simple HTD 5mm or GT2 3mm timing pulley shapes.  It does 
 image::TimingPulleyCreate.png[]
 
 
-== Tubify Tool image:icons/Tubify.png['Tubify', 30]
+=== Tubify Tool image:icons/Tubify.png['Tubify', 30]
 TIP: kbd:[Solid Tab] menu:Create[FRCTools > Tubify Solid]
 
 This tool converts solid 1x1 or 1x2 shapes into shelled and hole punched tubes used in FRC.  
@@ -89,19 +88,19 @@ This tool converts solid 1x1 or 1x2 shapes into shelled and hole punched tubes u
 image::TubifyDialog.png[]
 
 
-== Lighten Tool image:icons/Lighten.png['Lighten', 30]
+=== Lighten Tool image:icons/Lighten.png['Lighten', 30]
 TIP: kbd:[Solid Tab] menu:Create[FRCTools > Lighten]
 
 This tool pockets a solid by offsetting profiles and cut extruding them through the solid.  A sketch should be created on the body to be lightened with spider-web lines where material should be kept.  Holding the Ctrl-key while selecting profiles delays the updating of the lighten tool graphics until Ctrl is released. 
 
 image::LightenDialog.png[]
 
-== Shaft Generator Tool
+=== Shaft Generator Tool
 TIP: kbd:[Solid Tab] menu:Create[FRCTools > Generate Shaft]
 
 Generate a shaft from a few common profiles (MAXSpline, 1/2 hex, 3/8 hex and 3/4 OD Round Tube
 
 image::ShaftGen.png[]
 
-[#MarkerCAD]
-= Marker CAD
+
+== Marker CAD
