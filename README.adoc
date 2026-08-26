@@ -103,33 +103,33 @@ image::Example.png[]
 
 === Features
 
-- Arm
+- Arm  
 Creates a tube attached to a sprocket
-- Belt
+- Belt  
 Creates a simple belt
-- Conveyor
+- Conveyor  
 Creates a belt based conveyor mechanism
-- Drive Train
+- Drive Train  
 Creates a drivetrain (bring your own swerve pod CAD)
-- Elevator
+- Elevator  
 Creates an elevator
-- Fixed Hooded Shooter
+- Fixed Hooded Shooter  
 Creates a shooter with a fixed hood
-- Frame
+- Frame  
 Creates either a rectangular or triangular supporting frame
-- Gamepiece
+- Gamepiece  
 Creates a generic game piece
-- Rollers
+- Rollers  
 Creates 1 or 2 horizontal rollers attached to plates
-- Rollers along a path
+- Rollers along a path  
 Creates a bunch of rollers on a path defined on a face/plane that is parallel to the XY plane
-- Spindex
+- Spindex  
 Creates a spindex
-- Structure
+- Structure  
 Creates a basic strucure piece
-- Telescope
+- Telescope  
 Creates a telescope
-- Turret
+- Turret  
 Creates a turret
-- Variable Shooter
+- Variable Shooter  
 Creates a shooter with a moving hood
