@@ -77,7 +77,7 @@ def stop():
 # Function that is called when a user clicks the corresponding button in the UI.
 # This defines the contents of the command dialog and connects to the command related events.
 def command_created(args: adsk.core.CommandCreatedEventArgs):
-    ui.messageBox("created")
+   
     # General logging for debug.
     futil.log(f'{CMD_NAME} Command Created Event')
 
@@ -96,7 +96,7 @@ def command_created(args: adsk.core.CommandCreatedEventArgs):
         inputs.addValueInput('belt_width', "Belt Thickness", defaultLengthUnits, adsk.core.ValueInput.createByReal(2.54 ))
      
     except Exception as ex:
-        ui.messageBox(ex)
+        ui.messageBox(str(ex))
     
 
 

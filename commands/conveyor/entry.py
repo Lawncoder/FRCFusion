@@ -77,7 +77,7 @@ def stop():
 # Function that is called when a user clicks the corresponding button in the UI.
 # This defines the contents of the command dialog and connects to the command related events.
 def command_created(args: adsk.core.CommandCreatedEventArgs):
-    ui.messageBox("created")
+    
     # General logging for debug.
     futil.log(f'{CMD_NAME} Command Created Event')
 
@@ -178,7 +178,7 @@ def command_execute(args: adsk.core.CommandEventArgs):
     else:
         interval = (beltEnd - beltStart)/(belt_count - 1)
     for i in range(belt_count):
-        ui.messageBox(f"creating belt {i} of {belt_count}")
+    
         planeInput = comp.constructionPlanes.createInput(occ)
         planeInput.setByOffset(comp.xYConstructionPlane, adsk.core.ValueInput.createByReal(beltStart + i * interval))
         plane = comp.constructionPlanes.add(planeInput)

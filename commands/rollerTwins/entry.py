@@ -119,7 +119,7 @@ def command_execute(args: adsk.core.CommandEventArgs):
 
     # Get a reference to your command's inputs.
     inputs = args.command.commandInputs
-    ui.messageBox('execute')
+
     try:
         rollerDiamaterCmdInput:adsk.core.ValueCommandInput = inputs.itemById('roller_diameter')
         rollerDiamaterInches = rollerDiamaterCmdInput.value

@@ -77,7 +77,7 @@ def stop():
 # Function that is called when a user clicks the corresponding button in the UI.
 # This defines the contents of the command dialog and connects to the command related events.
 def command_created(args: adsk.core.CommandCreatedEventArgs):
-    ui.messageBox("created")
+
     # General logging for debug.
     futil.log(f'{CMD_NAME} Command Created Event')
 
@@ -178,7 +178,7 @@ def command_execute(args: adsk.core.CommandEventArgs):
         for face in bumperOcc.component.bRepBodies.item(0).faces:
                 if face.evaluator.getNormalAtPoint(face.pointOnFace)[1].isPerpendicularTo(adsk.core.Vector3D.create(0,0,1)):
                     bumperChamferCollection.add(face)
-        ui.messageBox(f'{bumperChamferCollection.count}')
+       
         filletInput = bumperOcc.component.features.filletFeatures.createInput()
         filletInput.edgeSetInputs.addConstantRadiusEdgeSet(bumperChamferCollection, adsk.core.ValueInput.createByReal(bumper_height/3), False)
         bumperOcc.component.features.filletFeatures.add(filletInput)
