@@ -103,33 +103,18 @@ image::Example.png[]
 
 === Features
 
-- Arm  
-Creates a tube attached to a sprocket
-- Belt  
-Creates a simple belt
-- Conveyor  
-Creates a belt based conveyor mechanism
-- Drive Train  
-Creates a drivetrain (bring your own swerve pod CAD)
-- Elevator  
-Creates an elevator
-- Fixed Hooded Shooter  
-Creates a shooter with a fixed hood
-- Frame  
-Creates either a rectangular or triangular supporting frame
-- Gamepiece  
-Creates a generic game piece
-- Rollers  
-Creates 1 or 2 horizontal rollers attached to plates
-- Rollers along a path  
-Creates a bunch of rollers on a path defined on a face/plane that is parallel to the XY plane
-- Spindex  
-Creates a spindex
-- Structure  
-Creates a basic strucure piece
-- Telescope  
-Creates a telescope
-- Turret  
-Creates a turret
-- Variable Shooter  
-Creates a shooter with a moving hood
+- **Arm** — Creates a tube attached to a sprocket
+- **Belt** — Creates a simple belt
+- **Conveyor** — Creates a belt-based conveyor mechanism
+- **Drive Train** — Creates a drivetrain (bring your own swerve pod CAD)
+- **Elevator** — Creates an elevator
+- **Fixed Hooded Shooter** — Creates a shooter with a fixed hood
+- **Frame** — Creates either a rectangular or triangular supporting frame
+- **Gamepiece** — Creates a generic game piece
+- **Rollers** — Creates 1 or 2 horizontal rollers attached to plates
+- **Rollers Along a Path** — Creates a series of rollers on a path defined on a face/plane parallel to the XY plane
+- **Spindex** — Creates a spindex
+- **Structure** — Creates a basic structural piece
+- **Telescope** — Creates a telescope
+- **Turret** — Creates a turret
+- **Variable Shooter** — Creates a shooter with a moving hood
